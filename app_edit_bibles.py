@@ -25,7 +25,7 @@ import gettext
 import time
 from tkinter import *
 
-import pygame
+# import pygame
 from peewee import *
 
 from app_applytemplate import AppApplyTemplate
@@ -42,7 +42,7 @@ fr.install()
 _ = fr.gettext
 ngettext = fr.ngettext
 
-pygame.init()
+# pygame.init()
 
 
 class AppEditBibles(Toplevel):
@@ -229,15 +229,15 @@ class AppEditBibles(Toplevel):
                 Nom_Template, self.Traduction
             )
         )
-        s = pygame.mixer.Sound(repertoire_script + "sounds/mgb-7.ogg")
-        s.play()
+        # s = pygame.mixer.Sound(repertoire_script + "sounds/mgb-7.ogg")
+        # s.play()
 
     def do_import(self, event):
         """Importe un modèle de nomage de livres et l'applique à la traduction courante"""
         app = AppApplyTemplate()
         app.run()
-        s = pygame.mixer.Sound(repertoire_script + "sounds/mgb-7.ogg")
-        s.play()
+        # s = pygame.mixer.Sound(repertoire_script + "sounds/mgb-7.ogg")
+        # s.play()
 
     def do_SelectLivres(self, event):
         try:
@@ -263,8 +263,8 @@ Livre N°: {}"""
                 self.entry_shortcut.insert("0", l.Shortcut)
 
     def do_validate(self, event):
-        s = pygame.mixer.Sound(repertoire_script + "sounds/blaster08.ogg")
-        s.play()
+        # s = pygame.mixer.Sound(repertoire_script + "sounds/blaster08.ogg")
+        # s.play()
         try:
             q = Livres.update(
                 {

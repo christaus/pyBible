@@ -24,7 +24,7 @@ import codecs
 import gettext
 from tkinter import *
 
-import pygame
+# import pygame
 
 from creer_bouton import creer_bouton
 from db_model import *
@@ -39,7 +39,7 @@ fr.install()
 _ = fr.gettext
 ngettext = fr.ngettext
 
-pygame.init()
+# pygame.init()
 
 
 class AppApplyTemplate(Toplevel):
@@ -249,8 +249,8 @@ class AppApplyTemplate(Toplevel):
                 print(f"{self.Traduction}")
         except:
             return 0
-        s = pygame.mixer.Sound(repertoire_script + "sounds/mgb-7.ogg")
-        s.play()
+        # s = pygame.mixer.Sound(repertoire_script + "sounds/mgb-7.ogg")
+        # s.play()
         self.LSTLivres.insert(VAR_row, self.template[VAR_row][0])
         q = Livres.update(
             {

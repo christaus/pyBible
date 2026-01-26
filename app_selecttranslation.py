@@ -23,7 +23,7 @@
 import gettext
 from tkinter import *
 
-import pygame
+# import pygame
 from peewee import *
 
 from creer_bouton import creer_bouton
@@ -39,7 +39,7 @@ fr.install()
 _ = fr.gettext
 ngettext = fr.ngettext
 
-pygame.init()
+# pygame.init()
 
 
 class SelectTranslation(Toplevel):

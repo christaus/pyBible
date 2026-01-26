@@ -23,7 +23,7 @@
 import gettext
 from tkinter import *
 
-import pygame
+# import pygame
 from peewee import *
 
 from class_pyBible import pyBible_Global
@@ -39,7 +39,7 @@ fr.install()
 _ = fr.gettext
 ngettext = fr.ngettext
 
-pygame.init()
+# pygame.init()
 
 
 class AppRechercher(Toplevel):

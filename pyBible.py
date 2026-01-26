@@ -24,7 +24,7 @@ import codecs
 import gettext
 from tkinter import *
 
-import pygame
+# import pygame
 from peewee import *
 
 from app_Iamreading import AppIamReading
@@ -45,7 +45,7 @@ fr.install()
 _ = fr.gettext
 ngettext = fr.ngettext
 
-pygame.init()
+# pygame.init()
 
 
 class pyBible(Tk):
